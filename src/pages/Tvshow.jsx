@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 
-function Home() {
+function Tvshow() {
   const [movies, setMovies] = useState([]);
   const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
 
 
   useEffect(() => {
-    fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}`)
+    fetch(`https://api.themoviedb.org/3/tv/popular?api_key=${API_KEY}`)
       .then(res => res.json())
       .then(data => {
         setMovies(data.results);
@@ -18,14 +18,14 @@ function Home() {
 
   return (
     <div className="bg-gray-100 min-h-screen p-6">
-      <h1 className="text-3xl font-bold text-center text-gray-800 mb-8">Popular Movies</h1>
+      <h1 className="text-3xl font-bold text-center text-gray-800 mb-8">Popular Shows</h1>
       {movies.length === 0 ? (
-        <p>Loading Movies</p>
+        <p>Loading TvShows</p>
       ) : (
         <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {movies.map(movie => (
           <div key={movie.id} className="bg-white shadow-md rounded-lg overflow-hidden">
-            <Link to={`/video/${movie.id}`}>
+            <Link to={`/show/${movie.id}`}>
             <img
               src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
               alt={movie.title}
@@ -47,7 +47,7 @@ function Home() {
       </div>
       )}
     </div>
-  );
+  )
 }
 
-export default Home;
+export default Tvshow

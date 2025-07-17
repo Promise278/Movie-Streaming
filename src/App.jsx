@@ -5,6 +5,8 @@ import Home from './components/Home'
 import Video from './pages/Video'
 import Nav from './components/Nav';
 import Footer from './components/Footer';
+import Tvshow from './pages/Tvshow';
+import Showtv from './pages/Showtv';
 
 function App() {
 
@@ -13,7 +15,9 @@ function App() {
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/video" element={<Video />} />
+        <Route path="/video/:id" element={<Video />} />
+        <Route path="/tvshow" element={<Tvshow />} />
+        <Route path="/show/:id" element={<Showtv />} />
       </Routes>
       <Footer />
     </Router>

@@ -12,7 +12,7 @@ function Nav() {
       <div className="hidden md:flex space-x-6">
         <Link to="/" className="text-gray-700 hover:text-indigo-600 transition font-medium">Home</Link>
         <Link to="/trending" className="text-gray-700 hover:text-indigo-600 transition font-medium">Trending</Link>
-        <Link to="/tv" className="text-gray-700 hover:text-indigo-600 transition font-medium">TV Shows</Link>
+        <Link to="/tvshow" className="text-gray-700 hover:text-indigo-600 transition font-medium">TV Shows</Link>
         <Link to="/about" className="text-gray-700 hover:text-indigo-600 transition font-medium">About</Link>
       </div>
 
