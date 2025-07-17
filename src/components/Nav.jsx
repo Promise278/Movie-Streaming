@@ -5,7 +5,7 @@ import { Search } from 'lucide-react';
 function Nav() {
   return (
     <nav className="bg-white shadow-md px-6 py-4 flex items-center justify-between sticky top-0 z-50">
-      <Link to="/" className="text-2xl font-bold text-gray-800 hover:text-indigo-600 transition duration-300">
+      <Link to="/" className="md:text-2xl text-md font-bold text-gray-800 hover:text-indigo-600 transition duration-300">
         🎬 MovieMate
       </Link>
 

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function Home() {
   const [movies, setMovies] = useState([]);
@@ -17,6 +18,10 @@ function Home() {
   return (
     <div className="bg-gray-100 min-h-screen p-6">
       <h1 className="text-3xl font-bold text-center text-gray-800 mb-8">Popular Movies</h1>
+      <Link to='/video'>
+      {movies.length === 0 ? (
+        <p>Loading Movies</p>
+      ) : (
       <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {movies.map(movie => (
           <div key={movie.id} className="bg-white shadow-md rounded-lg overflow-hidden">
@@ -38,6 +43,8 @@ function Home() {
           </div>
         ))}
       </div>
+      )}
+      </Link>
     </div>
   );
 }
