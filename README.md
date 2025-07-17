@@ -23,11 +23,6 @@ This project is a movie streaming web application built with React and Vite. It 
     npm run dev
     ```
 
-3. **Build for production:**
-    ```bash
-    npm run build
-    ```
-
 ### Folder Structure
 
 ```
