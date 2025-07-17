@@ -1,12 +1,42 @@
-# React + Vite
+## Movie Streaming Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a movie streaming web application built with React and Vite. It allows users to browse, search, and stream movies online with a modern and responsive user interface.
 
-Currently, two official plugins are available:
+### Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Browse a catalog of movies
+- Responsive design for desktop and mobile
+- Fast development with Vite and React
+- Movie List Display
+- TV Series List Display
+- Navigation
 
-## Expanding the ESLint configuration
+### Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. **Install dependencies:**
+    ```bash
+    npm install
+    ```
+
+2. **Start the development server:**
+    ```bash
+    npm run dev
+    ```
+
+3. **Build for production:**
+    ```bash
+    npm run build
+    ```
+
+### Folder Structure
+
+```
+movie-streaming/
+├── public/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   └── App.jsx
+├── package.json
+└── README.md
+```
